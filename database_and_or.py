@@ -6,11 +6,12 @@ conn = sqlite3.connect("customer.db")
 # Create a cursor
 c = conn.cursor()
 
-# Order By Database - Order BY
-c.execute("SELECT rowid,* FROM customers ORDER BY rowid ")
+# Order Tha database and/or
+c.execute("SELECT rowid,* FROM customers WHERE last_name LIKE 'El%' AND rowid = 2")
 
-# Order Descending
-c.execute("SELECT rowid,* FROM customers ORDER BY rowid DESC")
+#Case Or
+c.execute("SELECT rowid,* FROM customers WHERE last_name LIKE 'El%' OR rowid = 2")
+
 
 
 

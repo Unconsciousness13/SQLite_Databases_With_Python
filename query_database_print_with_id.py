@@ -20,5 +20,5 @@ for item in items:
 conn.commit()
 
 # Close out connection
-conn.close
+conn.close()
 

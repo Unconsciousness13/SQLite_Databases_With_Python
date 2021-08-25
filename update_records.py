@@ -28,4 +28,4 @@ for item in items:
 
 
 # Close out connection
-conn.close
+conn.close()
